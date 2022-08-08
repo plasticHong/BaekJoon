@@ -11,8 +11,8 @@ public class Main {
         int[] scores = new int[N];
         double M = scores[0];
         double[] newScores = new double[scores.length];
-        int sum = 0;
-
+        double sum = 0;
+        double op = 100;
 
 
         for (int i = 0; i < scores.length; i++) {
@@ -24,12 +24,12 @@ public class Main {
 
 
         for (int i = 0; i <scores.length ; i++) {
-           newScores[i] = (scores[i]*100)/M*100;
+           newScores[i] = (scores[i]*op)/M*op;
 
            sum += newScores[i];
         }
 
-        double result = (sum/ newScores.length);
+        double result = (sum/ newScores.length/op);
         System.out.printf("%f",result );
 
 
