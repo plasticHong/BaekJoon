@@ -4,37 +4,20 @@ import java.util.Scanner;
 
 class test{
     public static void main(String[] args){
-        char a = '\0';
-        int temp = 0;
-        int sum = 0;
-        String str = "";
+
         Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        int j = 0;
+        int totalTestCase = Integer.parseInt(sc.next());
+        double sum = 0;
+        double avg = 0;
 
-        try{
-            while((a = (char)System.in.read()) == 'O' || a == 'X' || a == '\n' || a == '\r'){
-                if(a == 'O'){
-                    temp++;
-                    sum += temp;
-                }else{
-                    temp = 0;
-                }
-                if(a == '\n'|| a =='\r'){
-                    str += (sum + "\n");
-                    sum = 0;
-                    temp = 0;
-                    j++;
-                }
-                if(j>=i){
-                    break;
-                }
-            }
-
-
-        }catch(Exception e){
-            return;
+        String input;
+                input = sc.nextLine();
+      //  input = "5 50 50 70 80 100";
+        String[] arr = input.split("\\s");
+        int[] intArr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            intArr[i] = Integer.parseInt(arr[i]);
+            System.out.println(intArr[i]);
         }
-        System.out.print(str.length());
     }
 }
