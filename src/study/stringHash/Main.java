@@ -10,10 +10,15 @@ public class Main {
         String abcde = "abcde";
 
         int a = 'a';
+        int A = 'A';
+        int z = 'z';
+        int Z = 'Z';
         int b = 'b';
 
         System.out.println("a : "+a);
-        System.out.println("b : "+b);
+        System.out.println("A : "+A);
+        System.out.println("z : "+z);
+        System.out.println("Z : "+Z);
 
 
         System.out.println(ab.hashCode());
