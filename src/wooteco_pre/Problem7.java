@@ -20,7 +20,7 @@ public class Problem7 {
 
 
     private static List<String> sort(Map<String, Integer> map) {
-        List<Map.Entry<String, Integer>> entries;
+        List<Map.Entry<String,Integer>> entries;
 
         Comparator<Map.Entry<String, Integer>> compareByValue = Map.Entry.comparingByValue(Comparator.reverseOrder());
         Comparator<Map.Entry<String, Integer>> compareByKey = Map.Entry.comparingByKey();
